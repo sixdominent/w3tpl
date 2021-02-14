@@ -7,16 +7,46 @@
 <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css" />
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
 <style>
+  .mySidebar {
+    display: none;
+    z-index: 2;
+  }
+
   .w-p-100 {
     width: 100%;
+  }
+
+  .w-p-45 {
+    width: 45%;
+  }
+
+  .page-header {
+    width: 100%;
+    min-height: 350px;
+    max-height: 600px;
+  }
+
+  .position-relative {
+    position: relative;
+  }
+
+  .btn-sidebar-open {
+    position: absolute;
+    top: -28px;
+    right: 24px;
+  }
+
+  .btn-go-top {
+    position: relative;
+    bottom: 100px;
+    z-index: 1;
   }
 </style>
 
 <body id="myPage">
 
   <!-- Sidebar on click -->
-  <nav class="w3-sidebar w3-bar-block w3-white w3-card w3-animate-left w3-xxlarge" style="display:none;z-index:2"
-    id="mySidebar">
+  <nav class="w3-sidebar w3-bar-block w3-white w3-card w3-animate-left w3-xxlarge mySidebar" id="mySidebar">
     <a href="javascript:void(0)" onclick="w3_close()"
       class="w3-bar-item w3-button w3-display-topright w3-text-teal">Close
       <i class="fa fa-remove"></i>
@@ -62,7 +92,7 @@
 
   <!-- Image Header -->
   <div class="w3-display-container w3-animate-opacity">
-    <img src="images/sailboat.jpg" alt="boat" style="width:100%;min-height:350px;max-height:600px;">
+    <img class="image-header" src="images/sailboat.jpg" alt="boat">
     <div class="w3-container w3-display-bottomleft w3-margin-bottom">
       <button onclick="document.getElementById('id01').style.display='block'"
         class="w3-button w3-xlarge w3-theme w3-hover-teal" title="Go To W3.CSS">LEARN W3.CSS</button>
@@ -96,25 +126,25 @@
     <div class="w3-row"><br />
 
       <div class="w3-quarter">
-        <img src="images/avatar.jpg" alt="Boss" style="width:45%" class="w3-circle w3-hover-opacity">
+        <img src="images/avatar.jpg" alt="Boss" class="w3-circle w3-hover-opacity w-p-45">
         <h3>Johnny Walker</h3>
         <p>Web Designer</p>
       </div>
 
       <div class="w3-quarter">
-        <img src="images/avatar.jpg" alt="Boss" style="width:45%" class="w3-circle w3-hover-opacity">
+        <img src="images/avatar.jpg" alt="Boss" class="w3-circle w3-hover-opacity w-p-45">
         <h3>Rebecca Flex</h3>
         <p>Support</p>
       </div>
 
       <div class="w3-quarter">
-        <img src="images/avatar.jpg" alt="Boss" style="width:45%" class="w3-circle w3-hover-opacity">
+        <img src="images/avatar.jpg" alt="Boss" class="w3-circle w3-hover-opacity w-p-45">
         <h3>Jan Ringo</h3>
         <p>Boss man</p>
       </div>
 
       <div class="w3-quarter">
-        <img src="images/avatar.jpg" alt="Boss" style="width:45%" class="w3-circle w3-hover-opacity">
+        <img src="images/avatar.jpg" alt="Boss" class="w3-circle w3-hover-opacity w-p-45">
         <h3>Kai Ringo</h3>
         <p>Fixer</p>
       </div>
@@ -179,9 +209,8 @@
   </div>
 
   <!-- Container -->
-  <div class="w3-container" style="position:relative">
-    <a onclick="w3_open()" class="w3-button w3-xlarge w3-circle w3-teal"
-      style="position:absolute;top:-28px;right:24px">+</a>
+  <div class="w3-container position-relative">
+    <a onclick="w3_open()" class="w3-button w3-xlarge w3-circle w3-teal btn-sidebar-open">+</a>
   </div>
 
   <!-- Pricing Row -->
@@ -279,31 +308,8 @@
     </div>
   </div>
 
-  <!-- Google Maps -->
-  <div id="googleMap" style="width:100%;height:420px;"></div>
-  <script>
-    function myMap() {
-      myCenter = new google.maps.LatLng(41.878114, -87.629798);
-      var mapOptions = {
-        center: myCenter,
-        zoom: 12,
-        scrollwheel: false,
-        draggable: false,
-        mapTypeId: google.maps.MapTypeId.ROADMAP
-      };
-      var map = new google.maps.Map(document.getElementById("googleMap"), mapOptions);
-
-      var marker = new google.maps.Marker({
-        position: myCenter,
-      });
-      marker.setMap(map);
-    }
-  </script>
-  <script src="https://maps.googleapis.com/maps/api/js?callback=myMap"></script>
-  <!--
-To use this code on your website, get a free API key from Google.
-Read more at: https://www.w3schools.com/graphics/google_maps_basic.asp
--->
+  <!-- Image of location/map -->
+  <img src="images/map.jpg" class="w3-image w3-greyscale-min w-p-100" />
 
   <!-- Footer -->
   <footer class="w3-container w3-padding-32 w3-theme-d1 w3-center">
@@ -317,7 +323,7 @@ Read more at: https://www.w3schools.com/graphics/google_maps_basic.asp
         class="fa fa-linkedin"></i></a>
     <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
 
-    <div style="position:relative;bottom:100px;z-index:1;" class="w3-tooltip w3-right">
+    <div class="w3-tooltip w3-right btn-go-top">
       <span class="w3-text w3-padding w3-teal w3-hide-small">Go To Top</span>
       <a class="w3-button w3-theme" href="#myPage"><span class="w3-xlarge">
           <i class="fa fa-chevron-circle-up"></i></span></a>

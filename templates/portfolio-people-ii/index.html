@@ -31,16 +31,65 @@
     height: 650px;
   }
 
+  .page-content {
+    max-width: 1600px;
+    margin-top: 83px;
+  }
+
+  .mySidebar {
+    z-index: 3;
+    width: 250px;
+    font-weight: bold;
+    display: none;
+    right: 0;
+  }
+
   .w-p-100 {
     width: 100%;
+  }
+
+  .w-p-95 {
+    width: 95%;
+  }
+
+  .w-p-85 {
+    width: 85%;
+  }
+
+  .w-p-80 {
+    width: 80%;
+  }
+
+  .w-s-50 {
+    width: 50px;
+  }
+
+  .wmax-s-600 {
+    max-width: 600px;
+  }
+
+  .pt-0 {
+    padding-top: 0;
+  }
+
+  .cursor-pointer {
+    cursor: pointer;
+  }
+
+  .about-section {
+    max-width: 600px;
+  }
+
+  .myGridPrice {
+    margin: 0 -16px;
   }
 </style>
 
 <body class="w3-light-grey">
 
   <!-- Sidebar/menu -->
-  <nav class="w3-sidebar w3-bar-block w3-black w3-animate-right w3-top w3-text-light-grey w3-large"
-    style="z-index:3;width:250px;font-weight:bold;display:none;right:0;" id="mySidebar">
+  <nav class="w3-sidebar w3-bar-block w3-black w3-animate-right w3-top w3-text-light-grey w3-large mySidebar"
+    id="mySidebar">
     <a href="javascript:void()" onclick="w3_close()" class="w3-bar-item w3-button w3-center w3-padding-32">CLOSE</a>
     <a href="#" onclick="w3_close()" class="w3-bar-item w3-button w3-center w3-padding-16">PORTFOLIO</a>
     <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button w3-center w3-padding-16">ABOUT ME</a>
@@ -54,11 +103,11 @@
   </header>
 
   <!-- Overlay effect when opening sidebar on small screens -->
-  <div class="w3-overlay w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" title="close side menu"
-    id="myOverlay"></div>
+  <div class="w3-overlay w3-animate-opacity cursor-pointer" onclick="w3_close()" title="close side menu" id="myOverlay">
+  </div>
 
   <!-- !PAGE CONTENT! -->
-  <div class="w3-main w3-content" style="max-width:1600px;margin-top:83px">
+  <div class="w3-main w3-content page-content">
 
     <!-- Photo grid -->
     <div class="w3-row w3-grayscale-min">
@@ -106,7 +155,7 @@
     </div>
 
     <!-- Modal for full size images on click-->
-    <div id="modal01" class="w3-modal w3-black" style="padding-top:0" onclick="this.style.display='none'">
+    <div id="modal01" class="w3-modal w3-black pt-0" onclick="this.style.display='none'">
       <span class="w3-button w3-black w3-xlarge w3-display-topright">×</span>
       <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
         <img id="img01" class="w3-image">
@@ -118,7 +167,7 @@
     <div class="w3-container w3-dark-grey w3-center w3-text-light-grey w3-padding-32" id="about">
       <h4><b>About Me</b></h4>
       <img src="images/avatar_hat.jpg" alt="Me" class="w3-image w3-padding-32 image-about" />
-      <div class="w3-content w3-justify" style="max-width:600px">
+      <div class="w3-content w3-justify about-section">
         <h4>My Name</h4>
         <p>Some text about me. I love taking photos of PEOPLE. I am lorem ipsum consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
@@ -135,15 +184,15 @@
         <h4 class="w3-padding-16">Technical Skills</h4>
         <p class="w3-wide">Photography</p>
         <div class="w3-white">
-          <div class="w3-container w3-padding-small w3-center w3-grey" style="width:95%">95%</div>
+          <div class="w3-container w3-padding-small w3-center w3-grey w-p-95">95%</div>
         </div>
         <p class="w3-wide">Web Design</p>
         <div class="w3-white">
-          <div class="w3-container w3-padding-small w3-center w3-grey" style="width:85%">85%</div>
+          <div class="w3-container w3-padding-small w3-center w3-grey w-p-85">85%</div>
         </div>
         <p class="w3-wide">Photoshop</p>
         <div class="w3-white">
-          <div class="w3-container w3-padding-small w3-center w3-grey" style="width:80%">80%</div>
+          <div class="w3-container w3-padding-small w3-center w3-grey w-p-80">80%</div>
         </div>
         <p><button
             class="w3-button w3-light-grey w3-padding-large w3-margin-top w3-margin-bottom w3-hover-black">Download
@@ -151,7 +200,7 @@
         <hr class="w3-opacity">
 
         <h4 class="w3-padding-16">How much I charge</h4>
-        <div class="w3-row-padding" style="margin:0 -16px">
+        <div class="w3-row-padding myGridPrice">
           <div class="w3-half w3-margin-bottom">
             <ul class="w3-ul w3-white w3-center">
               <li class="w3-black w3-xlarge w3-padding-32">Basic</li>
@@ -191,7 +240,7 @@
 
     <!-- Contact section -->
     <div class="w3-container w3-light-grey w3-padding-32 w3-padding-large" id="contact">
-      <div class="w3-content" style="max-width:600px">
+      <div class="w3-content wmax-s-600">
         <h4 class="w3-center"><b>Contact Me</b></h4>
         <p>Do you want me to photograph you? Fill out the form and fill me in with the details :) I love meeting new
           people!</p>
@@ -226,12 +275,12 @@
           <h3>BLOG POSTS</h3>
           <ul class="w3-ul">
             <li class="w3-padding-16 w3-hover-black">
-              <img src="images/workshop.jpg" class="w3-left w3-margin-right" style="width:50px">
+              <img src="images/workshop.jpg" class="w3-left w3-margin-right w-s-50">
               <span class="w3-large">Lorem</span><br />
               <span>Sed mattis nunc</span>
             </li>
             <li class="w3-padding-16 w3-hover-black">
-              <img src="images/gondol.jpg" class="w3-left w3-margin-right" style="width:50px">
+              <img src="images/gondol.jpg" class="w3-left w3-margin-right w-s-50">
               <span class="w3-large">Ipsum</span><br />
               <span>Praes tinci sed</span>
             </li>

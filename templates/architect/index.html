@@ -10,7 +10,7 @@
   }
 
   .page-header img {
-    width: 1500px;
+    width: 100%;
     height: 800px;
   }
 
@@ -44,7 +44,7 @@
   </div>
 
   <!-- Header -->
-  <header class="w3-display-container w3-content w3-wide" id="home">
+  <header class="w3-display-container w3-content w3-wide page-header" id="home">
     <img class="w3-image" src="images/architect.jpg" alt="Architecture" />
     <div class="w3-display-middle w3-margin-top w3-center">
       <h1 class="w3-xxlarge w3-text-white">
@@ -131,28 +131,28 @@
 
     <div class="w3-row-padding w3-grayscale">
       <div class="w3-col l3 m6 w3-margin-bottom">
-        <img src="images/team2.jpg" alt="John" />
+        <img class="w-p-100" src="images/team2.jpg" alt="John" />
         <h3>John Doe</h3>
         <p class="w3-opacity">CEO & Founder</p>
         <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
         <p><button class="w3-button w3-light-grey w3-block">Contact</button></p>
       </div>
       <div class="w3-col l3 m6 w3-margin-bottom">
-        <img src="images/team1.jpg" alt="Jane" />
+        <img class="w-p-100" src="images/team1.jpg" alt="Jane" />
         <h3>Jane Doe</h3>
         <p class="w3-opacity">Architect</p>
         <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
         <p><button class="w3-button w3-light-grey w3-block">Contact</button></p>
       </div>
       <div class="w3-col l3 m6 w3-margin-bottom">
-        <img src="images/team3.jpg" alt="Mike" />
+        <img class="w-p-100" src="images/team3.jpg" alt="Mike" />
         <h3>Mike Ross</h3>
         <p class="w3-opacity">Architect</p>
         <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
         <p><button class="w3-button w3-light-grey w3-block">Contact</button></p>
       </div>
       <div class="w3-col l3 m6 w3-margin-bottom">
-        <img src="images/team4.jpg" alt="Dan" />
+        <img class="w-p-100" src="images/team4.jpg" alt="Dan" />
         <h3>Dan Star</h3>
         <p class="w3-opacity">Architect</p>
         <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
@@ -174,44 +174,17 @@
         </button>
       </form>
     </div>
-
+    <div class="w3-container">
+      <img src="images/map.jpg" class="w3-image w-p-100" />
+    </div>
     <!-- End page content -->
   </div>
-
-  <!-- Google Map -->
-  <div id="googleMap" class="w3-grayscale page-map"></div>
 
   <!-- Footer -->
   <footer class="w3-center w3-black w3-padding-16">
     <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank"
         class="w3-hover-text-green">w3.css</a></p>
   </footer>
-
-  <!-- Add Google Maps -->
-  <script>
-    function myMap() {
-      myCenter = new google.maps.LatLng(41.878114, -87.629798);
-      var mapOptions = {
-        center: myCenter,
-        zoom: 12,
-        scrollwheel: false,
-        draggable: false,
-        mapTypeId: google.maps.MapTypeId.ROADMAP
-      };
-      var map = new google.maps.Map(document.getElementById("googleMap"), mapOptions);
-
-      var marker = new google.maps.Marker({
-        position: myCenter,
-      });
-      marker.setMap(map);
-    }
-  </script>
-  <script src="https://maps.googleapis.com/maps/api/js?callback=myMap"></script>
-  <!--
-To use this code on your website, get a free API key from Google.
-Read more at: https://www.w3schools.com/graphics/google_maps_basic.asp
--->
-
 </body>
 
 </html>

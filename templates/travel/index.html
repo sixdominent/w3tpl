@@ -21,13 +21,34 @@
     display: none
   }
 
+  .page-header {
+    max-width: 1500px;
+  }
+
   .image-header {
     width: 1500px;
     height: 700px;
   }
 
+  .page-content {
+    max-width: 1100px;
+  }
+
   .w-p-100 {
     width: 100%;
+  }
+
+  .w-p-65 {
+    width: 65%;
+  }
+
+  .w-s-30 {
+    width: 30px;
+  }
+
+  .item-form,
+  .item-location {
+    margin: 0 -16px;
   }
 </style>
 
@@ -41,9 +62,9 @@
   </div>
 
   <!-- Header -->
-  <header class="w3-display-container w3-content w3-hide-small" style="max-width:1500px">
+  <header class="w3-display-container w3-content w3-hide-small page-header">
     <img class="w3-image image-header" src="images/london2.jpg" alt="London" />
-    <div class="w3-display-middle" style="width:65%">
+    <div class="w3-display-middle w-p-65">
       <div class="w3-bar w3-black">
         <button class="w3-bar-item w3-button tablink" onclick="openLink(event, 'Flight');"><i
             class="fa fa-plane w3-margin-right"></i>Flight</button>
@@ -56,14 +77,14 @@
       <!-- Tabs -->
       <div id="Flight" class="w3-container w3-white w3-padding-16 myLink">
         <h3>Travel the world with us</h3>
-        <div class="w3-row-padding" style="margin:0 -16px;">
+        <div class="w3-row-padding item-form">
           <div class="w3-half">
             <label>From</label>
-            <input class="w3-input w3-border" type="text" placeholder="Departing from">
+            <input class="w3-input w3-border" type="text" placeholder="Departing from" />
           </div>
           <div class="w3-half">
             <label>To</label>
-            <input class="w3-input w3-border" type="text" placeholder="Arriving at">
+            <input class="w3-input w3-border" type="text" placeholder="Arriving at" />
           </div>
         </div>
         <p><button class="w3-button w3-dark-grey">Search and find dates</button></p>
@@ -87,7 +108,7 @@
   </header>
 
   <!-- Page content -->
-  <div class="w3-content" style="max-width:1100px;">
+  <div class="w3-content page-content">
 
     <!-- Good offers -->
     <div class="w3-container w3-margin-top">
@@ -102,7 +123,7 @@
         </div>
       </div>
       <div class="w3-half">
-        <div class="w3-row-padding" style="margin:0 -16px">
+        <div class="w3-row-padding item-location">
           <div class="w3-half w3-margin-bottom">
             <div class="w3-display-container">
               <img class="w-p-100" src="images/newyork2.jpg" alt="New York" />
@@ -116,7 +137,7 @@
             </div>
           </div>
         </div>
-        <div class="w3-row-padding" style="margin:0 -16px">
+        <div class="w3-row-padding item-location">
           <div class="w3-half w3-margin-bottom">
             <div class="w3-display-container">
               <img class="w-p-100" src="images/pisa.jpg" alt="Pisa" />
@@ -174,9 +195,9 @@
     <div class="w3-container">
       <h2>Contact</h2>
       <p>Let us book your next trip!</p>
-      <i class="fa fa-map-marker" style="width:30px"></i> Chicago, US<br />
-      <i class="fa fa-phone" style="width:30px"></i> Phone: +00 151515<br />
-      <i class="fa fa-envelope" style="width:30px"> </i> Email: mail@mail.com<br />
+      <i class="fa fa-map-marker w-s-30"></i> Chicago, US<br />
+      <i class="fa fa-phone w-s-30"></i> Phone: +00 151515<br />
+      <i class="fa fa-envelope w-s-30"> </i> Email: mail@mail.com<br />
       <form action="/action_page.php" target="_blank">
         <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Name" required name="Name"></p>
         <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Email" required name="Email"></p>

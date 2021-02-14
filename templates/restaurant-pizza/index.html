@@ -32,8 +32,24 @@
     min-height: 90vh;
   }
 
+  .f-s-100 {
+    font-size: 100px;
+  }
+
+  .f-s-60 {
+    font-size: 60px;
+  }
+
   .w-p-100 {
     width: 100%;
+  }
+
+  .w-s-150 {
+    width: 150px;
+  }
+
+  .mb-s-64 {
+    margin-bottom: 64px;
   }
 </style>
 
@@ -45,7 +61,7 @@
       <a href="#" class="w3-bar-item w3-button">HOME</a>
       <a href="#menu" class="w3-bar-item w3-button">MENU</a>
       <a href="#about" class="w3-bar-item w3-button">ABOUT</a>
-      <a href="#googleMap" class="w3-bar-item w3-button">CONTACT</a>
+      <a href="#myMap" class="w3-bar-item w3-button">CONTACT</a>
     </div>
   </div>
 
@@ -55,8 +71,8 @@
       <span class="w3-tag w3-xlarge">Open from 10am to 12pm</span>
     </div>
     <div class="w3-display-middle w3-center">
-      <span class="w3-text-white w3-hide-small" style="font-size:100px">thin<br />CRUST PIZZA</span>
-      <span class="w3-text-white w3-hide-large w3-hide-medium" style="font-size:60px">
+      <span class="w3-text-white w3-hide-small f-s-100">thin<br />CRUST PIZZA</span>
+      <span class="w3-text-white w3-hide-large w3-hide-medium f-s-60">
         <b>thin<br />CRUST PIZZA</b>
       </span>
       <p><a href="#menu" class="w3-button w3-xxlarge w3-black">Let me see the menu</a></p>
@@ -67,7 +83,7 @@
   <div class="w3-container w3-black w3-padding-64 w3-xxlarge" id="menu">
     <div class="w3-content">
 
-      <h1 class="w3-center w3-jumbo" style="margin-bottom:64px">THE MENU</h1>
+      <h1 class="w3-center w3-jumbo mb-s-64">THE MENU</h1>
       <div class="w3-row w3-center w3-border w3-border-dark-grey">
         <a href="javascript:void(0)" onclick="openMenu(event, 'Pizza');" id="myLink">
           <div class="w3-col s4 tablink w3-padding-large w3-hover-red">Pizza</div>
@@ -150,12 +166,12 @@
   <!-- About Container -->
   <div class="w3-container w3-padding-64 w3-red w3-grayscale w3-xlarge" id="about">
     <div class="w3-content">
-      <h1 class="w3-center w3-jumbo" style="margin-bottom:64px">About</h1>
+      <h1 class="w3-center w3-jumbo mb-s-64">About</h1>
       <p>The Pizza Restaurant was founded in blabla by Mr. Italiano in lorem ipsum dolor sit amet, consectetur
         adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
         quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-      <p><strong>The Chef?</strong> Mr. Italiano himself<img src="images/chef.jpg" style="width:150px"
-          class="w3-circle w3-right" alt="Chef"></p>
+      <p><strong>The Chef?</strong> Mr. Italiano himself<img src="images/chef.jpg" class="w3-circle w3-right w-s-150"
+          alt="Chef"></p>
       <p>We are proud of our interiors.</p>
       <img src="images/onepage_restaurant.jpg" class="w3-margin-top w3-margin-bottom w-p-100" alt="Restaurant">
       <h1><b>Opening Hours</b></h1>
@@ -177,12 +193,12 @@
   </div>
 
   <!-- Image of location/map -->
-  <img src="images/map.jpg" class="w3-image w3-greyscale" style="width:100%;" id="myMap">
+  <img src="images/map.jpg" class="w3-image w3-greyscale w-p-100" id="myMap">
 
   <!-- Contact -->
   <div class="w3-container w3-padding-64 w3-blue-grey w3-grayscale-min w3-xlarge">
     <div class="w3-content">
-      <h1 class="w3-center w3-jumbo" style="margin-bottom:64px">Contact</h1>
+      <h1 class="w3-center w3-jumbo mb-s-64">Contact</h1>
       <p>Find us at some address at some place or call us at 05050515-122330</p>
       <p><span class="w3-tag">FYI!</span> We offer full-service catering for any event, large or small. We understand
         your needs and we will cater the food to satisfy the biggerst criteria of them all, both look and taste.</p>

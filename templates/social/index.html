@@ -18,8 +18,39 @@
     font-family: "Open Sans", sans-serif
   }
 
+  .page-container {
+    max-width: 1400px;
+    margin-top: 80px;
+  }
+
+  .myAvatar {
+    height: 23px;
+    width: 23px;
+  }
+
+  .myProfileAvatar {
+    height: 106px;
+    width: 106px;
+  }
+
+  .post-image {
+    margin: 0 -16px;
+  }
+
   .w-p-100 {
     width: 100%;
+  }
+
+  .w-p-50 {
+    width: 50%;
+  }
+
+  .w-s-300 {
+    width: 300px;
+  }
+
+  .w-s-60 {
+    width: 60px;
   }
 </style>
 
@@ -41,7 +72,7 @@
       <div class="w3-dropdown-hover w3-hide-small">
         <button class="w3-button w3-padding-large" title="Notifications"><i class="fa fa-bell"></i><span
             class="w3-badge w3-right w3-small w3-green">3</span></button>
-        <div class="w3-dropdown-content w3-card-4 w3-bar-block" style="width:300px">
+        <div class="w3-dropdown-content w3-card-4 w3-bar-block w-s-300">
           <a href="#" class="w3-bar-item w3-button">One new friend request</a>
           <a href="#" class="w3-bar-item w3-button">John Doe posted on your wall</a>
           <a href="#" class="w3-bar-item w3-button">Jane likes your post</a>
@@ -49,7 +80,7 @@
       </div>
       <a href="#" class="w3-bar-item w3-button w3-hide-small w3-right w3-padding-large w3-hover-white"
         title="My Account">
-        <img src="images/avatar2.png" class="w3-circle" style="height:23px;width:23px" alt="Avatar">
+        <img src="images/avatar2.png" class="w3-circle myAvatar" alt="Avatar">
       </a>
     </div>
   </div>
@@ -63,7 +94,7 @@
   </div>
 
   <!-- Page Container -->
-  <div class="w3-container w3-content" style="max-width:1400px;margin-top:80px">
+  <div class="w3-container w3-content page-container">
     <!-- The Grid -->
     <div class="w3-row">
       <!-- Left Column -->
@@ -72,8 +103,7 @@
         <div class="w3-card w3-round w3-white">
           <div class="w3-container">
             <h4 class="w3-center">My Profile</h4>
-            <p class="w3-center"><img src="images/avatar3.png" class="w3-circle" style="height:106px;width:106px"
-                alt="Avatar"></p>
+            <p class="w3-center"><img src="images/avatar3.png" class="w3-circle myProfileAvatar" alt="Avatar"></p>
             <hr />
             <p><i class="fa fa-pencil fa-fw w3-margin-right w3-text-theme"></i> Designer, UI</p>
             <p><i class="fa fa-home fa-fw w3-margin-right w3-text-theme"></i> London, UK</p>
@@ -174,14 +204,16 @@
         </div>
 
         <div class="w3-container w3-card w3-white w3-round w3-margin"><br />
-          <img src="images/avatar2.png" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:60px">
+          <img src="images/avatar2.png" alt="Avatar" class="w3-left w3-circle w3-margin-right w-s-60" />
           <span class="w3-right w3-opacity">1 min</span>
           <h4>John Doe</h4><br />
           <hr class="w3-clear">
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
             dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
-            ea commodo consequat.</p>
-          <div class="w3-row-padding" style="margin:0 -16px">
+            ea commodo consequat.
+          </p>
+          <div class="w3-row-padding post-image">
             <div class="w3-half">
               <img class="w3-margin-bottom w-p-100" src="images/lights.jpg" alt="Northern Lights" />
             </div>
@@ -196,7 +228,7 @@
         </div>
 
         <div class="w3-container w3-card w3-white w3-round w3-margin"><br />
-          <img src="images/avatar5.png" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:60px">
+          <img src="images/avatar5.png" alt="Avatar" class="w3-left w3-circle w3-margin-right w-s-60" />
           <span class="w3-right w3-opacity">16 min</span>
           <h4>Jane Doe</h4><br />
           <hr class="w3-clear">
@@ -210,7 +242,7 @@
         </div>
 
         <div class="w3-container w3-card w3-white w3-round w3-margin"><br />
-          <img src="images/avatar6.png" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:60px">
+          <img src="images/avatar6.png" alt="Avatar" class="w3-left w3-circle w3-margin-right w-s-60" />
           <span class="w3-right w3-opacity">32 min</span>
           <h4>Angie Jane</h4><br />
           <hr class="w3-clear">
@@ -233,7 +265,7 @@
         <div class="w3-card w3-round w3-white w3-center">
           <div class="w3-container">
             <p>Upcoming Events:</p>
-            <img src="images/forest.jpg" alt="Forest" style="width:100%;">
+            <img class="w-p-100" src="images/forest.jpg" alt="Forest">
             <p><strong>Holiday</strong></p>
             <p>Friday 15:00</p>
             <p><button class="w3-button w3-block w3-theme-l4">Info</button></p>
@@ -244,7 +276,7 @@
         <div class="w3-card w3-round w3-white w3-center">
           <div class="w3-container">
             <p>Friend Request</p>
-            <img src="images/avatar6.png" alt="Avatar" style="width:50%"><br />
+            <img class="w-p-50" src="images/avatar6.png" alt="Avatar"><br />
             <span>Jane Doe</span>
             <div class="w3-row w3-opacity">
               <div class="w3-half">

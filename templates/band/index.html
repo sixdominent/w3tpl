@@ -225,12 +225,12 @@
         </div>
         <div class="w3-col m6">
           <form action="/action_page.php" target="_blank">
-            <div class="w3-row-padding page-content-form">
+            <div class="w3-row-padding page-contact-form">
               <div class="w3-half">
-                <input class="w3-input w3-border" type="text" placeholder="Name" required name="Name">
+                <input class="w3-input w3-border w-p-100" type="text" placeholder="Name" required name="Name">
               </div>
               <div class="w3-half">
-                <input class="w3-input w3-border" type="text" placeholder="Email" required name="Email">
+                <input class="w3-input w3-border w-p-100" type="text" placeholder="Email" required name="Email">
               </div>
             </div>
             <input class="w3-input w3-border" type="text" placeholder="Message" required name="Message">
@@ -242,31 +242,9 @@
 
     <!-- End Page Content -->
   </div>
-  <!-- Add Google Maps -->
-  <div id="googleMap" class="w3-grayscale-max page-map"></div>
-  <script>
-    function myMap() {
-      myCenter = new google.maps.LatLng(41.878114, -87.629798);
-      var mapOptions = {
-        center: myCenter,
-        zoom: 12,
-        scrollwheel: false,
-        draggable: false,
-        mapTypeId: google.maps.MapTypeId.ROADMAP
-      };
-      var map = new google.maps.Map(document.getElementById("googleMap"), mapOptions);
 
-      var marker = new google.maps.Marker({
-        position: myCenter,
-      });
-      marker.setMap(map);
-    }
-  </script>
-  <script src="https://maps.googleapis.com/maps/api/js?callback=myMap"></script>
-  <!--
-To use this code on your website, get a free API key from Google.
-Read more at: https://www.w3schools.com/graphics/google_maps_basic.asp
--->
+  <!-- Image of location/map -->
+  <img src="images/map.jpg" class="w3-image w3-greyscale-min w-p-100" />
 
   <!-- Footer -->
   <footer class="w3-container w3-padding-64 w3-center w3-opacity w3-light-grey w3-xlarge">

@@ -20,17 +20,38 @@
     margin-bottom: 12px
   }
 
+  .page-content {
+    max-width: 1500px;
+  }
+
   .w-p-100 {
     width: 100%;
+  }
+
+  .mySidebar {
+    display: none;
+    padding-top: 150px;
+  }
+
+  .btn-sidebar-close {
+    padding: 6px 24px;
+  }
+
+  .mb-s-128 {
+    margin-bottom: 128px;
+  }
+
+  .mt-s-128 {
+    margin-top: 128px;
   }
 </style>
 
 <body>
 
   <!-- Sidebar -->
-  <nav class="w3-sidebar w3-black w3-animate-top w3-xxlarge" style="display:none;padding-top:150px" id="mySidebar">
+  <nav class="w3-sidebar w3-black w3-animate-top w3-xxlarge mySidebar" id="mySidebar">
     <a href="javascript:void(0)" onclick="w3_close()"
-      class="w3-button w3-black w3-xxlarge w3-padding w3-display-topright" style="padding:6px 24px">
+      class="w3-button w3-black w3-xxlarge w3-padding w3-display-topright btn-sidebar-close">
       <i class="fa fa-remove"></i>
     </a>
     <div class="w3-bar-block w3-center">
@@ -42,7 +63,7 @@
   </nav>
 
   <!-- !PAGE CONTENT! -->
-  <div class="w3-content" style="max-width:1500px">
+  <div class="w3-content page-content">
 
     <!-- Header -->
     <div class="w3-opacity">
@@ -57,7 +78,7 @@
     </div>
 
     <!-- Photo Grid -->
-    <div class="w3-row" id="myGrid" style="margin-bottom:128px">
+    <div class="w3-row mb-s-128" id="myGrid">
       <div class="w3-third">
         <img class="w-p-100" src="images/rocks.jpg" />
         <img class="w-p-100" src="images/sound.jpg" />
@@ -90,7 +111,7 @@
   </div>
 
   <!-- Footer -->
-  <footer class="w3-container w3-padding-64 w3-light-grey w3-center w3-opacity w3-xlarge" style="margin-top:128px">
+  <footer class="w3-container w3-padding-64 w3-light-grey w3-center w3-opacity w3-xlarge mt-s-128">
     <i class="fa fa-facebook-official w3-hover-opacity"></i>
     <i class="fa fa-instagram w3-hover-opacity"></i>
     <i class="fa fa-snapchat w3-hover-opacity"></i>
