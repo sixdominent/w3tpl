@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html>
-<title>W3.CSS Template</title>
+<title>W3.CSS Template - Pizza Restaurant</title>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Amatic+SC">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Amatic+SC" />
 <style>
   body {
     height: 100%
@@ -28,7 +28,12 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-image: url("images/pizza.jpg");
-    min-height: 90%;
+    width: 100%;
+    min-height: 90vh;
+  }
+
+  .w-p-100 {
+    width: 100%;
   }
 </style>
 
@@ -51,8 +56,9 @@
     </div>
     <div class="w3-display-middle w3-center">
       <span class="w3-text-white w3-hide-small" style="font-size:100px">thin<br />CRUST PIZZA</span>
-      <span class="w3-text-white w3-hide-large w3-hide-medium" style="font-size:60px"><b>thin<br />CRUST
-          PIZZA</b></span>
+      <span class="w3-text-white w3-hide-large w3-hide-medium" style="font-size:60px">
+        <b>thin<br />CRUST PIZZA</b>
+      </span>
       <p><a href="#menu" class="w3-button w3-xxlarge w3-black">Let me see the menu</a></p>
     </div>
   </header>
@@ -151,8 +157,7 @@
       <p><strong>The Chef?</strong> Mr. Italiano himself<img src="images/chef.jpg" style="width:150px"
           class="w3-circle w3-right" alt="Chef"></p>
       <p>We are proud of our interiors.</p>
-      <img src="images/onepage_restaurant.jpg" style="width:100%" class="w3-margin-top w3-margin-bottom"
-        alt="Restaurant">
+      <img src="images/onepage_restaurant.jpg" class="w3-margin-top w3-margin-bottom w-p-100" alt="Restaurant">
       <h1><b>Opening Hours</b></h1>
 
       <div class="w3-row">
@@ -171,9 +176,10 @@
     </div>
   </div>
 
-  <!-- Contact (with google maps) -->
-  <div id="googleMap" class="w3-grayscale-max" style="width:100%;height:400px;"></div>
+  <!-- Image of location/map -->
+  <img src="images/map.jpg" class="w3-image w3-greyscale" style="width:100%;" id="myMap">
 
+  <!-- Contact -->
   <div class="w3-container w3-padding-64 w3-blue-grey w3-grayscale-min w3-xlarge">
     <div class="w3-content">
       <h1 class="w3-center w3-jumbo" style="margin-bottom:64px">Contact</h1>
@@ -202,23 +208,6 @@
 
   <!-- Add Google Maps -->
   <script>
-    function myMap() {
-      myCenter = new google.maps.LatLng(41.878114, -87.629798);
-      var mapOptions = {
-        center: myCenter,
-        zoom: 12,
-        scrollwheel: false,
-        draggable: false,
-        mapTypeId: google.maps.MapTypeId.ROADMAP
-      };
-      var map = new google.maps.Map(document.getElementById("googleMap"), mapOptions);
-
-      var marker = new google.maps.Marker({
-        position: myCenter,
-      });
-      marker.setMap(map);
-    }
-
     // Tabbed Menu
     function openMenu(evt, menuName) {
       var i, x, tablinks;
@@ -235,8 +224,7 @@
     }
     document.getElementById("myLink").click();
   </script>
-  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBu-916DdpKAjTmJNIgngS6HL_kDIKU0aU&callback=myMap">
-  </script>
+
   <!--
 To use this code on your website, get a free API key from Google.
 Read more at: https://www.w3schools.com/graphics/google_maps_basic.asp

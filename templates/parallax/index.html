@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-<title>W3.CSS Template</title>
+<title>W3.CSS Template - Parallax</title>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
@@ -36,7 +36,7 @@
   /* First image (Logo. Full height) */
   .bgimg-1 {
     background-image: url('images/parallax1.jpg');
-    min-height: 100%;
+    min-height: 400px;
   }
 
   /* Second image (Portfolio) */
@@ -67,6 +67,15 @@
     .bgimg-3 {
       background-attachment: scroll;
     }
+  }
+
+  .myAvatar {
+    width: 500px;
+    height: 333px;
+  }
+
+  .w-p-100 {
+    width: 100%;
   }
 </style>
 
@@ -109,7 +118,8 @@
   <div class="w3-content w3-container w3-padding-64" id="about">
     <h3 class="w3-center">ABOUT ME</h3>
     <p class="w3-center"><em>I love photography</em></p>
-    <p>We have created a fictional "personal" website/blog, and our fictional character is a hobby photographer. Lorem
+    <p>
+      We have created a fictional "personal" website/blog, and our fictional character is a hobby photographer. Lorem
       ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
       aliqua. Ut enim ad minim veniam,
       quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
@@ -117,12 +127,13 @@
       non proident, sunt in culpa
       qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
       labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-      ex ea commodo consequat.</p>
+      ex ea commodo consequat.
+    </p>
     <div class="w3-row">
       <div class="w3-col m6 w3-center w3-padding-large">
         <p><b><i class="fa fa-user w3-margin-right"></i>My Name</b></p><br />
-        <img src="images/avatar_hat.jpg" class="w3-round w3-image w3-opacity w3-hover-opacity-off" alt="Photo of Me"
-          width="500" height="333">
+        <img src="images/avatar_hat.jpg" class="w3-round w3-image w3-opacity w3-hover-opacity-off myAvatar"
+          alt="Photo of Me" />
       </div>
 
       <!-- Hide this text on small devices -->
@@ -187,40 +198,39 @@
     <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
     <div class="w3-row-padding w3-center">
       <div class="w3-col m3">
-        <img src="images/p1.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity"
-          alt="The mist over the mountains">
+        <img class="w-p-100" src="images/p1.jpg" onclick="onClick(this)" class="w3-hover-opacity"
+          alt="The mist over the mountains" />
       </div>
 
       <div class="w3-col m3">
-        <img src="images/p2.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Coffee beans">
+        <img class="w-p-100" src="images/p2.jpg" onclick="onClick(this)" class="w3-hover-opacity" alt="Coffee beans" />
       </div>
 
       <div class="w3-col m3">
-        <img src="images/p3.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Bear closeup">
+        <img class="w-p-100" src="images/p3.jpg" onclick="onClick(this)" class="w3-hover-opacity" alt="Bear closeup" />
       </div>
 
       <div class="w3-col m3">
-        <img src="images/p4.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Quiet ocean">
+        <img class="w-p-100" src="images/p4.jpg" onclick="onClick(this)" class="w3-hover-opacity" alt="Quiet ocean" />
       </div>
     </div>
 
     <div class="w3-row-padding w3-center w3-section">
       <div class="w3-col m3">
-        <img src="images/p5.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="The mist">
+        <img class="w-p-100" src="images/p5.jpg" onclick="onClick(this)" class="w3-hover-opacity" alt="The mist" />
       </div>
 
       <div class="w3-col m3">
-        <img src="images/p6.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity"
-          alt="My beloved typewriter">
+        <img src="images/p6.jpg" onclick="onClick(this)" class="w3-hover-opacity" alt="My beloved typewriter">
       </div>
 
       <div class="w3-col m3">
-        <img src="images/p7.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity"
-          alt="Empty ghost train">
+        <img class="w-p-100" src="images/p7.jpg" onclick="onClick(this)" class="w3-hover-opacity"
+          alt="Empty ghost train" />
       </div>
 
       <div class="w3-col m3">
-        <img src="images/p8.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Sailing">
+        <img class="w-p-100" src="images/p8.jpg" onclick="onClick(this)" class="w3-hover-opacity" alt="Sailing" />
       </div>
       <button class="w3-button w3-padding-large w3-light-grey" style="margin-top:64px">LOAD MORE</button>
     </div>

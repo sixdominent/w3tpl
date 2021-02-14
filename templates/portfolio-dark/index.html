@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-<title>W3.CSS Template</title>
+<title>W3.CSS Template - Dark Portfolio</title>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
@@ -38,6 +38,15 @@
       margin-left: 0
     }
   }
+
+  .image-header {
+    width: 992px;
+    height: 1108px;
+  }
+
+  .w-p-100 {
+    width: 100%;
+  }
 </style>
 
 <body class="w3-black">
@@ -45,7 +54,7 @@
   <!-- Icon Bar (Sidebar - hidden on small screens) -->
   <nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center">
     <!-- Avatar image in top left corner -->
-    <img src="images/avatar_smoke.jpg" style="width:100%">
+    <img class="w-p-100" src="images/avatar_smoke.jpg" />
     <a href="#" class="w3-bar-item w3-button w3-padding-large w3-black">
       <i class="fa fa-home w3-xxlarge"></i>
       <p>HOME</p>
@@ -80,7 +89,7 @@
     <header class="w3-container w3-padding-32 w3-center w3-black" id="home">
       <h1 class="w3-jumbo"><span class="w3-hide-small">I'm</span> John Doe.</h1>
       <p>Photographer and Web Designer.</p>
-      <img src="images/man_smoke.jpg" alt="boy" class="w3-image" width="992" height="1108">
+      <img src="images/man_smoke.jpg" alt="boy" class="w3-image image-header" />
     </header>
 
     <!-- About Section -->
@@ -192,16 +201,16 @@
       <!-- Grid for photos -->
       <div class="w3-row-padding" style="margin:0 -16px">
         <div class="w3-half">
-          <img src="images/wedding.jpg" style="width:100%">
-          <img src="images/rocks.jpg" style="width:100%">
-          <img src="images/sailboat.jpg" style="width:100%">
+          <img class="w-p-100" src="images/wedding.jpg" />
+          <img class="w-p-100" src="images/rocks.jpg" />
+          <img class="w-p-100" src="images/sailboat.jpg" />
         </div>
 
         <div class="w3-half">
-          <img src="images/underwater.jpg" style="width:100%">
-          <img src="images/chef.jpg" style="width:100%">
-          <img src="images/wedding.jpg" style="width:100%">
-          <img src="images/p6.jpg" style="width:100%">
+          <img class="w-p-100" src="images/underwater.jpg" />
+          <img class="w-p-100" src="images/chef.jpg" />
+          <img class="w-p-100" src="images/wedding.jpg" />
+          <img class="w-p-100" src="images/p6.jpg" />
         </div>
         <!-- End photo grid -->
       </div>

@@ -1,15 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
-<title>W3.CSS Template</title>
+<title>W3.CSS Template - Photo Portfolio</title>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+<style>
+  .myHeader {
+    max-width: 1500px
+  }
+
+  .image-header {
+    width: 100%;
+    height: 540px;
+  }
+
+  .image-port {
+    width: 1000px;
+    height: 500px;
+  }
+</style>
 
 <body>
 
   <!-- Header -->
-  <header class="w3-display-container w3-content w3-center" style="max-width:1500px">
-    <img class="w3-image" src="images/photographer.jpg" alt="Me" width="1500" height="600">
+  <header class="w3-display-container w3-content w3-center myHeader">
+    <img class="w3-image image-header" src="images/photographer.jpg" alt="Me" />
     <div class="w3-display-middle w3-padding-large w3-border w3-wide w3-text-light-grey w3-center">
       <h1 class="w3-hide-medium w3-hide-small w3-xxxlarge">JANE DOE</h1>
       <h5 class="w3-hide-large" style="white-space:nowrap">JANE DOE</h5>
@@ -36,11 +51,11 @@
   <div class="w3-content w3-padding-large w3-margin-top" id="portfolio">
 
     <!-- Images (Portfolio) -->
-    <img src="images/ocean.jpg" alt="Ocean" class="w3-image" width="1000" height="500">
-    <img src="images/ocean2.jpg" alt="Ocean II" class="w3-image w3-margin-top" width="1000" height="500">
-    <img src="images/falls2.jpg" alt="Falls" class="w3-image w3-margin-top" width="1000" height="500">
-    <img src="images/mountainskies.jpg" alt="Skies" class="w3-image w3-margin-top" width="1000" height="500">
-    <img src="images/mountains2.jpg" alt="Mountains" class="w3-image w3-margin-top" width="1000" height="500">
+    <img class="w3-image image-port" src="images/ocean.jpg" alt="Ocean" />
+    <img class="w3-image w3-margin-top image-port" src="images/ocean2.jpg" alt="Ocean II" />
+    <img class="w3-image w3-margin-top image-port" src="images/falls2.jpg" alt="Falls" />
+    <img class="w3-image w3-margin-top image-port" src="images/mountainskies.jpg" alt="Skies" />
+    <img class="w3-image w3-margin-top image-port" src="images/mountains2.jpg" alt="Mountains" />
 
     <!-- Contact -->
     <div class="w3-light-grey w3-padding-large w3-padding-32 w3-margin-top" id="contact">

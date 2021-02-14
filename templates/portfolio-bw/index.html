@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-<title>W3.CSS Template</title>
+<title>W3.CSS Template - Black & White Portfolio</title>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
@@ -27,6 +27,21 @@
     background-size: cover;
     background-image: url('images/profile_girl.jpg');
     min-height: 100%;
+  }
+
+  .image-header-sm {
+    display: block;
+    width: 60%;
+    margin: auto;
+  }
+
+  .image-header-md {
+    width: 1000px;
+    height: 1333px;
+  }
+
+  .w-p-100 {
+    width: 100%;
   }
 </style>
 
@@ -63,10 +78,8 @@
     <header class="w3-container w3-center" style="padding:128px 16px" id="home">
       <h1 class="w3-jumbo"><b>Jane Doe</b></h1>
       <p>Photographer and Web Designer.</p>
-      <img src="images/profile_girl.jpg" class="w3-image w3-hide-large w3-hide-small w3-round"
-        style="display:block;width:60%;margin:auto;">
-      <img src="images/profile_girl.jpg" class="w3-image w3-hide-large w3-hide-medium w3-round" width="1000"
-        height="1333">
+      <img src="images/profile_girl.jpg" class="w3-image w3-hide-large w3-hide-small w3-round image-header-sm" />
+      <img src="images/profile_girl.jpg" class="w3-image w3-hide-large w3-hide-medium w3-round image-header-md" />
       <button class="w3-button w3-light-grey w3-padding-large w3-margin-top">
         <i class="fa fa-download"></i> Download Resume
       </button>
@@ -80,16 +93,16 @@
       <!-- Grid for photos -->
       <div class="w3-row-padding" style="margin:0 -16px">
         <div class="w3-half">
-          <img src="images/wedding.jpg" style="width:100%">
-          <img src="images/rocks.jpg" style="width:100%">
-          <img src="images/sailboat.jpg" style="width:100%">
+          <img class="w-p-100" src="images/wedding.jpg" />
+          <img class="w-p-100" src="images/rocks.jpg" />
+          <img class="w-p-100" src="images/sailboat.jpg" />
         </div>
 
         <div class="w3-half">
-          <img src="images/underwater.jpg" style="width:100%">
-          <img src="images/chef.jpg" style="width:100%">
-          <img src="images/wedding.jpg" style="width:100%">
-          <img src="images/p6.jpg" style="width:100%">
+          <img class="w-p-100" src="images/underwater.jpg" />
+          <img class="w-p-100" src="images/chef.jpg" />
+          <img class="w-p-100" src="images/wedding.jpg" />
+          <img class="w-p-100" src="images/p6.jpg" />
         </div>
         <!-- End photo grid -->
       </div>

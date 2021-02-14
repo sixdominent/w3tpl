@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-<title>W3.CSS Template</title>
+<title>W3.CSS Template - Clothing Store</title>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
@@ -22,17 +22,54 @@
   .w3-wide {
     font-family: "Montserrat", sans-serif;
   }
+
+  .page-container {
+    max-width: 1200px
+  }
+
+  .mySidebar {
+    z-index: 3;
+    width: 250px;
+  }
+
+  .f-bold {
+    font-weight: bold;
+  }
+
+  .cursor-pointer {
+    cursor: pointer;
+  }
+
+  .ml-s-250 {
+    margin-left: 250px;
+  }
+
+  .mt-s-83 {
+    margin-top: 83px
+  }
+
+  .w-p-100 {
+    width: 100%;
+  }
+
+  .p-s-32 {
+    padding: 32px;
+  }
+
+  .image-label {
+    padding: 24px 48px;
+  }
 </style>
 
-<body class="w3-content" style="max-width:1200px">
+<body class="w3-content page-container">
 
   <!-- Sidebar/menu -->
-  <nav class="w3-sidebar w3-bar-block w3-white w3-collapse w3-top" style="z-index:3;width:250px" id="mySidebar">
+  <nav class="w3-sidebar w3-bar-block w3-white w3-collapse w3-top mySidebar" id="mySidebar">
     <div class="w3-container w3-display-container w3-padding-16">
       <i onclick="w3_close()" class="fa fa-remove w3-hide-large w3-button w3-display-topright"></i>
       <h3 class="w3-wide"><b>LOGO</b></h3>
     </div>
-    <div class="w3-padding-64 w3-large w3-text-grey" style="font-weight:bold">
+    <div class="w3-padding-64 w3-large w3-text-grey f-bold">
       <a href="#" class="w3-bar-item w3-button">Shirts</a>
       <a href="#" class="w3-bar-item w3-button">Dresses</a>
       <a onclick="myAccFunc()" href="javascript:void(0)" class="w3-button w3-block w3-white w3-left-align" id="myBtn">
@@ -64,14 +101,14 @@
   </header>
 
   <!-- Overlay effect when opening sidebar on small screens -->
-  <div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu"
-    id="myOverlay"></div>
+  <div class="w3-overlay w3-hide-large cursor-pointer" onclick="w3_close()" title="close side menu" id="myOverlay">
+  </div>
 
   <!-- !PAGE CONTENT! -->
-  <div class="w3-main" style="margin-left:250px">
+  <div class="w3-main ml-s-250">
 
     <!-- Push down content on small screens -->
-    <div class="w3-hide-large" style="margin-top:83px"></div>
+    <div class="w3-hide-large mt-s-83"></div>
 
     <!-- Top header -->
     <header class="w3-container w3-xlarge">
@@ -84,8 +121,8 @@
 
     <!-- Image header -->
     <div class="w3-display-container w3-container">
-      <img src="images/jeans.jpg" alt="Jeans" style="width:100%">
-      <div class="w3-display-topleft w3-text-white" style="padding:24px 48px">
+      <img class="w-p-100" src="images/jeans.jpg" alt="Jeans">
+      <div class="w3-display-topleft w3-text-white image-label">
         <h1 class="w3-jumbo w3-hide-small">New arrivals</h1>
         <h1 class="w3-hide-large w3-hide-medium">New arrivals</h1>
         <h1 class="w3-hide-small">COLLECTION 2016</h1>
@@ -101,11 +138,11 @@
     <div class="w3-row w3-grayscale">
       <div class="w3-col l3 s6">
         <div class="w3-container">
-          <img src="images/jeans1.jpg" style="width:100%">
+          <img class="w-p-100" src="images/jeans1.jpg" />
           <p>Ripped Skinny Jeans<br /><b>$24.99</b></p>
         </div>
         <div class="w3-container">
-          <img src="images/jeans2.jpg" style="width:100%">
+          <img class="w-p-100" src="images/jeans2.jpg" />
           <p>Mega Ripped Jeans<br /><b>$19.99</b></p>
         </div>
       </div>
@@ -113,7 +150,7 @@
       <div class="w3-col l3 s6">
         <div class="w3-container">
           <div class="w3-display-container">
-            <img src="images/jeans2.jpg" style="width:100%">
+            <img class="w-p-100" src="images/jeans2.jpg" />
             <span class="w3-tag w3-display-topleft">New</span>
             <div class="w3-display-middle w3-display-hover">
               <button class="w3-button w3-black">Buy now <i class="fa fa-shopping-cart"></i></button>
@@ -122,19 +159,19 @@
           <p>Mega Ripped Jeans<br /><b>$19.99</b></p>
         </div>
         <div class="w3-container">
-          <img src="images/jeans3.jpg" style="width:100%">
+          <img class="w-p-100" src="images/jeans3.jpg" />
           <p>Washed Skinny Jeans<br /><b>$20.50</b></p>
         </div>
       </div>
 
       <div class="w3-col l3 s6">
         <div class="w3-container">
-          <img src="images/jeans3.jpg" style="width:100%">
+          <img class="w-p-100" src="images/jeans3.jpg" />
           <p>Washed Skinny Jeans<br /><b>$20.50</b></p>
         </div>
         <div class="w3-container">
           <div class="w3-display-container">
-            <img src="images/jeans4.jpg" style="width:100%">
+            <img class="w-p-100" src="images/jeans4.jpg" />
             <span class="w3-tag w3-display-topleft">Sale</span>
             <div class="w3-display-middle w3-display-hover">
               <button class="w3-button w3-black">Buy now <i class="fa fa-shopping-cart"></i></button>
@@ -146,11 +183,11 @@
 
       <div class="w3-col l3 s6">
         <div class="w3-container">
-          <img src="images/jeans4.jpg" style="width:100%">
+          <img class="w-p-100" src="images/jeans4.jpg" />
           <p>Vintage Skinny Jeans<br /><b>$14.99</b></p>
         </div>
         <div class="w3-container">
-          <img src="images/jeans1.jpg" style="width:100%">
+          <img class="w-p-100" src="images/jeans1.jpg" />
           <p>Ripped Skinny Jeans<br /><b>$24.99</b></p>
         </div>
       </div>
@@ -160,7 +197,7 @@
     <div class="w3-container w3-black w3-padding-32">
       <h1>Subscribe</h1>
       <p>To get special offers and VIP treatment:</p>
-      <p><input class="w3-input w3-border" type="text" placeholder="Enter e-mail" style="width:100%"></p>
+      <p><input class="w3-input w3-border w-p-100" type="text" placeholder="Enter e-mail" /></p>
       <button type="button" class="w3-button w3-red w3-margin-bottom">Subscribe</button>
     </div>
 
@@ -219,7 +256,7 @@
 
   <!-- Newsletter Modal -->
   <div id="newsletter" class="w3-modal">
-    <div class="w3-modal-content w3-animate-zoom" style="padding:32px">
+    <div class="w3-modal-content w3-animate-zoom p-s-32">
       <div class="w3-container w3-white w3-center">
         <i onclick="document.getElementById('newsletter').style.display='none'"
           class="fa fa-remove w3-right w3-button w3-transparent w3-xxlarge"></i>
